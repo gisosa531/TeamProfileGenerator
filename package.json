@@ -1,0 +1,26 @@
+{
+  "name": "TeamProfileGenerator",
+  "version": "1.0.0",
+  "description": "Node.JS command line application that generates a TeamProfile HTML page from the information provided.",
+  "main": "index.js",
+  "scripts": {
+    "test": " jest --echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gisosa531/TeamProfileGenerator.git"
+  },
+  "keywords": [],
+  "author": "Giovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gisosa531/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/gisosa531/TeamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
