@@ -4,13 +4,17 @@
   "description": "Node.JS command line application that generates a TeamProfile HTML page from the information provided.",
   "main": "index.js",
   "scripts": {
-    "test": " jest --echo \"Error: no test specified\" && exit 1"
+    "test": " jest --echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gisosa531/TeamProfileGenerator.git"
   },
-  "keywords": [],
+  "keywords": [
+    "employee",
+    "profile"
+  ],
   "author": "Giovanni",
   "license": "ISC",
   "bugs": {
