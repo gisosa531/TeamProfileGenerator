@@ -20,35 +20,138 @@ const viewPath = path.join(VIEW_DIR, "profile.html");
 //Global Scope 
 const teamArray = [];
 
-function addManagerProfile() {
-  console.log("Time to build your Dream Team!")
-  return inquirer.prompt([
-    {
-      type: "input",
-      name: "managerNAME",
-      message: "What is the Name of the team manager?",
-    },
-    {
-      type: "input",
-      name: "managerID",
-      message: "What is the Id of the manager?",
-    },
-    {
-      type: "input",
-      name: "managerEMAIL",
-      message: "What is the Email address of the manager?",
-    },
-    {
-      type: "input",
-      name: "officeNumber",
-      message: "What is the manager's Office Number?",
+function start() {
+
+  const addManagerProfile = () => {
+    console.log("Time to build your Dream Team!")
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "managerNAME",
+        message: "What is the Name of the team manager?",
+      },
+      {
+        type: "input",
+        name: "managerID",
+        message: "What is the Id of the manager?",
+      },
+      {
+        type: "input",
+        name: "managerEMAIL",
+        message: "What is the Email address of the manager?",
+      },
+      {
+        type: "input",
+        name: "officeNumber",
+        message: "What is the manager's Office Number?",
+      }
+    ]).then(res => {
+      const manager = new Manager(res.managerNAME, res.managerID, res.managerEMAIL, res.officeNumber);
+      teamArray.push(manager);
+      console.log(teamArray);
+      teamChoice();
+    });
+  }
+
+  const setEngineer = () => {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "engineerNAME",
+        message: "What is the Name of your engineer?"
+      },
+      {
+        type: "input",
+        name: "engineerID",
+        message: "What is the ID of your engineer?"
+      },
+      {
+        type: "input",
+        name: "engineerEMAIL",
+        message: "What is the Email of your engineer?"
+      },
+      {
+        type: "input",
+        name: "engineerGITHUB",
+        message: "What is the GitHub Username of your engineer?"
+      },
+    ])
+      .then(res => {
+        const engineer = new Engineer(res.engineerNAME, res.engineerID, res.engineerEMAIL, res.engineerGITHUB);
+        teamArray.push(engineer);
+        console.log(teamArray);
+        teamChoice();
+
+      })
+  }
+
+  const setIntern = () => {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "internNAME",
+        message: "What is the Name of your intern?"
+      },
+      {
+        type: "input",
+        name: "internID",
+        message: "What is the ID of your intern?"
+      },
+      {
+        type: "input",
+        name: "internEMAIL",
+        message: "What is the Email of your intern?"
+      },
+      {
+        type: "input",
+        name: "internSCHOOL",
+        message: "What is the School Name of your intern?"
+      },
+    ]).then(res => {
+      const intern = new Intern(res.internNAME, res.internID, res.internEMAIL, res.internSCHOOL);
+      teamArray.push(intern);
+      console.log(`${res.internNAME} is now a member of the team!`);
+      teamChoice();
+    })
+  }
+
+  const teamChoice = () => {
+    return inquirer.prompt([
+      {
+        type: "list",
+        name: "employeeChoice",
+        message: "Which sort of team member do you want to bring in?",
+        choices: [
+          "Engineer",
+          "Intern",
+          "I don't wish to expand my staff any further."
+        ]
+      }
+    ])
+      //Switch case for Choices 
+      .then(res => {
+        switch (res.employeeChoice) {
+          case "Engineer":
+            setEngineer();
+            break;
+          case "Intern":
+            setIntern();
+            break;
+          default:
+            buildPage();
+        }
+      })
+  }
+
+  const buildPage = () => {
+    if (!fs.existsSync(VIEW_DIR)) {
+      fs.mkdirSync(VIEW_DIR)
     }
-  ]).then(res => {
-    const manager = new Manager(res.managerNAME, res.managerID, res.managerEMAIL, res.officeNumber);
-    teamArray.push(manager);
-    console.log(teamArray);
-  
-  });
+    fs.writeFileSync(viewPath, renderPage(teamArray), "utf-8");
+  }
+
+  addManagerProfile()
+
 }
 
-addManagerProfile()
+start();
