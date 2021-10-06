@@ -4,7 +4,7 @@
   "description": "Node.JS command line application that generates a TeamProfile HTML page from the information provided.",
   "main": "index.js",
   "scripts": {
-    "test": " jest --echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node index.js"
   },
   "repository": {
