@@ -5,7 +5,7 @@ const htmlPage = [];
 const managerCard = manager => {
     return `
     <div class="container mx-auto mt-4">
-    <div class="row">
+    <div class="card-deck">
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">
                 <img src="https://i.imgur.com/KEeADmE.jpg" class="card-img-top" alt="ProfilePic">
@@ -24,6 +24,8 @@ const managerCard = manager => {
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     `;
 };
 
@@ -31,7 +33,7 @@ const managerCard = manager => {
 const engineerCard = engineer => {
     return `
     <div class="container mx-auto mt-4">
-    <div class="row">
+    <div class="card-deck">
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">
                 <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="ProfilePic">
@@ -50,6 +52,8 @@ const engineerCard = engineer => {
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     `;
 };
 
@@ -57,10 +61,10 @@ const engineerCard = engineer => {
 const internCard = intern => {
     return `
     <div class="container mx-auto mt-4">
-    <div class="row">
+    <div class="card-deck">
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/P56fXQN.jpeg" class="card-img-top" alt="ProfilePic">
+                <img src="https://i.imgur.com/P56fXQN.jpeg" class="card-img-top" style="height:200px; object-fit:cover" alt="ProfilePic">
                 <div class ="card-body">
                 <h5 class ="card-title"><i class="fas fa-user-graduate"></i>${intern.getName()}</h5>
                 <h6 class ="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
@@ -76,6 +80,8 @@ const internCard = intern => {
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     `;
 };
 //High order functions for creating arrays and filtering data
@@ -121,15 +127,16 @@ module.exports = profile => {
         <div class="row">
             <div class="col-12 jumbotron  mb-3">
                 <h1 class="text-center">My Business Team</h1>
-                <p>This is our Team.</p>
+                <p class="text-center">This is our Team.</p>
             </div>
         </div>
     <div class="container">
-        <div class="row">
+        <div class="card-deck">
             <div class="col-12 d-flex justify-content-center">
                 ${renderTeamHTMl(profile)}
             </div>
         </div>
+    </div>
     </div>
     </body>
     
