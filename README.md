@@ -45,13 +45,15 @@ Thanks to:
 ## Images/Videos
 * Part 1: Running and Adding Data Information
 
+https://user-images.githubusercontent.com/84998291/136470873-038fe5c9-bb4a-4d6b-a9f9-44df65923fef.mp4
+
 Sample Page:
 
 <img src="./src/images/TeamPage.jpg" alt="Sample of rendered page">
 
 * Part 2: Tests Section
 
-
+https://user-images.githubusercontent.com/84998291/136470954-7f6aad21-ade1-4ad4-a869-8600db4606f9.mp4
 
 ## Contact Information
 If you have any problems concerning the repo, please file an issue or email me at 
