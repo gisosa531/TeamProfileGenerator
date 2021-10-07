@@ -47,6 +47,8 @@ Thanks to:
 
 Sample Page:
 
+<img src="./src/images/TeamPage.jpg" alt="Sample of rendered page">
+
 * Part 2: Tests Section
 
 

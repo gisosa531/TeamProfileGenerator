@@ -10,7 +10,7 @@ const managerCard = manager => {
             <div class="card" style="width: 18rem;">
                 <img src="https://i.imgur.com/KEeADmE.jpg" class="card-img-top" alt="ProfilePic">
                 <div class ="card-body">
-                <h5 class ="card-title"><i class="fas fa-user-tie"></i>${manager.getName()}</h5>
+                <h5 class ="card-title text-muted"><i class="fas fa-user-tie"></i>${manager.getName()}</h5>
                 <h6 class ="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
                 <div class ="card-body">
                 <ul class ="list-group">
@@ -38,7 +38,7 @@ const engineerCard = engineer => {
             <div class="card" style="width: 18rem;">
                 <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="ProfilePic">
                 <div class ="card-body">
-                <h5 class ="card-title"><i class="fas fa-user-alt"></i>${engineer.getName()}</h5>
+                <h5 class ="card-title text-muted"><i class="fas fa-user-alt"></i>${engineer.getName()}</h5>
                 <h6 class ="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
                 <div class ="card-body">
                 <ul class ="list-group">
@@ -66,7 +66,7 @@ const internCard = intern => {
             <div class="card" style="width: 18rem;">
                 <img src="https://i.imgur.com/P56fXQN.jpeg" class="card-img-top" style="height:200px; object-fit:cover" alt="ProfilePic">
                 <div class ="card-body">
-                <h5 class ="card-title"><i class="fas fa-user-graduate"></i>${intern.getName()}</h5>
+                <h5 class ="card-title text-muted"><i class="fas fa-user-graduate"></i>${intern.getName()}</h5>
                 <h6 class ="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
                 <div class ="card-body">
                 <ul class ="list-group">
