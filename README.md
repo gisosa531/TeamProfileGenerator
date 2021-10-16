@@ -45,7 +45,10 @@ Thanks to:
 ## Images/Videos
 * Part 1: Running and Adding Data Information
 
-https://user-images.githubusercontent.com/84998291/136470873-038fe5c9-bb4a-4d6b-a9f9-44df65923fef.mp4
+
+https://user-images.githubusercontent.com/84998291/137575050-ef8679aa-6a37-466a-9674-5cab0b651ae6.mp4
+
+
 
 Sample Page:
 
@@ -53,7 +56,10 @@ Sample Page:
 
 * Part 2: Tests Section
 
-https://user-images.githubusercontent.com/84998291/136470954-7f6aad21-ade1-4ad4-a869-8600db4606f9.mp4
+
+https://user-images.githubusercontent.com/84998291/137575052-14d730ae-ca5c-49a0-990e-5f46f60ff26b.mp4
+
+
 
 ## Contact Information
 If you have any problems concerning the repo, please file an issue or email me at 
