@@ -52,7 +52,10 @@ https://user-images.githubusercontent.com/84998291/137575162-e4a051dd-8e55-46b5-
 * Part 2: Adding Data and Rendering page
 
 
-https://user-images.githubusercontent.com/84998291/137575248-6efef41e-0a33-4ad5-b6d8-deaea2cfb080.mp4
+
+
+https://user-images.githubusercontent.com/84998291/137575336-4ab4c9f1-8a1f-4fd6-baac-fd82c2cf2b5b.mp4
+
 
 
 
