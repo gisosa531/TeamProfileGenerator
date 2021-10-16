@@ -43,10 +43,16 @@ Thanks to:
 * [https://github.com/gisosa531/TeamProfileGenerator](https://github.com/gisosa531/TeamProfileGenerator)
 
 ## Images/Videos
-* Part 1: Running and Adding Data Information
+* Part 1: Initializing and running app
 
 
-https://user-images.githubusercontent.com/84998291/137575050-ef8679aa-6a37-466a-9674-5cab0b651ae6.mp4
+https://user-images.githubusercontent.com/84998291/137575162-e4a051dd-8e55-46b5-8d1a-00d8f20951b5.mp4
+
+
+* Part 2: Adding Data and Rendering page
+
+
+https://user-images.githubusercontent.com/84998291/137575248-6efef41e-0a33-4ad5-b6d8-deaea2cfb080.mp4
 
 
 
@@ -57,7 +63,10 @@ Sample Page:
 * Part 2: Tests Section
 
 
-https://user-images.githubusercontent.com/84998291/137575052-14d730ae-ca5c-49a0-990e-5f46f60ff26b.mp4
+
+
+https://user-images.githubusercontent.com/84998291/137575260-741f1fb6-7542-4542-90b9-eb9e8c66c313.mp4
+
 
 
 
